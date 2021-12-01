@@ -2,6 +2,8 @@
   font: 500;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -18,9 +20,8 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: darkblue;
-  padding: 10px;
-  width: 100%
-
+  padding: 10px;                                                 
+  width: 100%;
 }
 
 #nav ul li {
@@ -29,14 +30,19 @@ body {
   justify-content: space-between;
 }
 
+nav a {
+  text-decoration: none;
+  justify-content: space-between;
+}
+
 /* About */
 
 #about {
-    padding: 110px;
+  padding: 110px;
 }
 
-#about h2{
-    margin: 0 auto;
+#about h2 {
+  margin: 0 auto;
 }
 
 #about img {
@@ -51,7 +57,7 @@ body {
   width: 500px;
   padding: 30px;
   margin: 0 auto;
-  border-radius: 5px;;
+  border-radius: 5px;
 }
 
 form {
