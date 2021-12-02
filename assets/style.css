@@ -7,58 +7,114 @@
 }
 
 body {
-  background-color: rgb(49, 163, 240);
+  background-color: rgb(71, 143, 190);
 }
 
-/* Header */
+/* Header + Nav */
 
-#header {
+header {
   display: flex;
   position: fixed;
   top: 0;
   left: 0;
   justify-content: space-between;
   align-items: center;
-  background-color: darkblue;
-  padding: 10px;                                                 
+  background-color: rgb(34, 88, 138);
+  padding: 10px;
   width: 100%;
 }
 
-#nav ul li {
+nav ul li {
   display: inline;
   text-decoration: none;
-  justify-content: space-between;
+  padding-right: 30px;
+  font-size: 1.25em;
 }
 
 nav a {
   text-decoration: none;
-  justify-content: space-between;
+}
+
+nav a:hover {
+  border-bottom: 2px solid white;
 }
 
 /* About */
 
-#about {
-  padding: 110px;
+.container {
+  text-align: center;
+  margin: 80px 150px 30px 150px;
 }
 
-#about h2 {
-  margin: 0 auto;
+.container h2 {
+  margin: 10px;
 }
 
-#about img {
+.container p {
+  margin: 15px 0;
+}
+
+.container img {
   width: 400px;
   border-radius: 5px;
+  border: 2px solid black;
 }
 
 /* Contact */
 #contact {
-  background-color: gray;
-  height: 250px;
-  width: 500px;
-  padding: 30px;
-  margin: 0 auto;
-  border-radius: 5px;
+  padding: 10px 0px 50px 0px;
 }
 
-form {
+.container-form {
+  background-color: rgb(34, 88, 138);
+  justify-content: center;
+  width: 300px;
+  padding: 10px 20px 20px 20px; 
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+.container-form input {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+}
+
+.container-form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form-control{
+  margin: 10px 0 20px 0;
+}
+
+.container-form input:focus {
+  outline: none;
+}
+
+.btn {
+  padding: 10px;
+  background-color:rgb(32, 148, 109);
+  border: 1px solid black;
+  border-radius: 10px;
+  color: white;
+  justify-content: center;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(34, 88, 138);
+  bottom: 0;
+  left: 0;
+}
+
+footer h3 {
+  text-align: center;
+  padding-top: 15px;
+  font-size: .85em;
 }

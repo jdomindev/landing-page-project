@@ -1,7 +1,7 @@
 <!-- 
 X    It's done when the page uses semantic HTML elements.
 
-    It's done when the page uses universal, element, and class selectors in CSS.
+X It's done when the page uses universal, element, and class selectors in CSS.
 
 X It's done when the page features at least three colors in the design.
 
@@ -45,34 +45,37 @@ It's done when the page is deployed to GitHub Pages. -->
     </header>
     <main id="main">
       <section id="about">
-        <h2>About Us</h2>
-        <p>
+        <div class="container">
+          <img src="./assets/images/image-1.png" alt="computer with feathers on screen and office supplies around computer" />
+          <h2>About Us</h2>
+          <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
           voluptatem mollitia architecto provident odit doloribus quis
           repudiandae quas beatae quisquam. Itaque corrupti ad vitae architecto
           quisquam ratione cum nemo saepe.
-        </p>
-        <img src="./assets/images/image-1.png" alt="computer with feathers on screen and office supplies around computer" />
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aperiam ex ab suscipit nostrum amet, reprehenderit rerum eos vel est quaerat sit molestiae. Corrupti, impedit nulla minus culpa inventore excepturi.
+          </p>
+        </div>
       </section>
       <section id="contact">
-        <form>
-          <label for="input">Name:</label>
-          <input
-            type="text"
-            name="name"
-            placeholder="Enter your name here"
-            required
-          />
-          <label for="input">Email:</label>
-          <input
-            type="email"
-            name="email"
-            placeholder="Enter your email here"
-            required
-          />
-          <input type="submit" value="Send" />
-        </form>
+        <div class="container-form">
+            <h2>Contact Us</h2>
+            <form>
+              <div class="form-control">
+                  <input type="text" name="name" placeholder="Enter your name" required>
+              </div>
+              <div class="form-control">
+                  <input type="email" name="email" placeholder="Enter your email" required>
+              </div>
+              <input type="submit" value="Send" class="btn">
+            </form>
+        </div>  
       </section>
+      <footer>
+        <h3>&copy; Jose Dominguez</h3>
+      </footer>
     </main>
   </body>
 </html>
